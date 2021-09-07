@@ -108,9 +108,9 @@ public class ProductMenu {
                     break;
                 }
             }
-            productManagement.displayAll();
             writeProgramTofile();
         } while (choice == -1);
+        productManagement.displayAll();
     }
 
     private void menuSort() {
