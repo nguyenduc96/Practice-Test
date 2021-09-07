@@ -55,10 +55,9 @@ public class ProductManagement implements IGeneralManagement<Product> {
             productList = (List<Product>) ois.readObject();
             ois.close();
             is.close();
-        }catch (EOFException e) {
+        } catch (EOFException e) {
             return null;
-        }
-        catch (IOException | ClassNotFoundException e) {
+        } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
         return productList;
